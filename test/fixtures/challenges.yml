@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  deadline: 2018-08-30
+  user: one
+  before_photo: MyString
+  before: 
+  after_photo: MyString
+  after_video: MyString
+  public: false
+  views: 1
+
+two:
+  title: MyString
+  description: MyText
+  deadline: 2018-08-30
+  user: two
+  before_photo: MyString
+  before: 
+  after_photo: MyString
+  after_video: MyString
+  public: false
+  views: 1

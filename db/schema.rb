@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_30_073149) do
+ActiveRecord::Schema.define(version: 2018_08_30_073905) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "challenges", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.date "deadline"
+    t.bigint "user_id"
+    t.integer "to_user_id"
+    t.string "before_photo"
+    t.string "before_video"
+    t.string "after_photo"
+    t.string "after_video"
+    t.boolean "public", default: true
+    t.integer "views"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_challenges_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "first_name"
