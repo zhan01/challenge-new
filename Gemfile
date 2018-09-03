@@ -33,6 +33,7 @@ gem 'administrate', '~> 0.10.0'
 
 
 
+
 ####################################
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -44,7 +45,7 @@ gem 'administrate', '~> 0.10.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'pg', '~> 1.1', '>= 1.1.2'
-gem 'bundler', '~> 1.16', '>= 1.16.4'
+gem 'bundler', '~> 1.16'
 gem 'carrierwave', '~> 1.2', '>= 1.2.3'
 gem 'mini_magick', '~> 4.8'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
